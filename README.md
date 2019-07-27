@@ -6,4 +6,5 @@
       <p>- symbol '/' for division, </p>
       <p>- symbol '.' for float numbers,</p> 
       <p>- type 'stop' for exit.</p>
-   <p>Example <font color="green">'-45.5*(-6.3)'</font></p>
+   <p>Example: `-45.5*(-6.3)`</p>
+
