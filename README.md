@@ -1,11 +1,12 @@
-<body>
- <p><h1>Online Calculator 1.0</h1> 
-     by FrozeRain. Use:</p> 
-      <p>- symbol '+' for sum, </p>
-      <p>- symbol '-' for minus, </p>
-      <p>- symbol '*' for multiply, </p>
-      <p>- symbol '/' for division, </p>
-      <p>- symbol '.' for float numbers,</p> 
-      <p>- type 'stop' for exit.</p>
- <p>Example: <code>-45.5*(-6.3)</code></p>
-</body>
+Online Calculator 1.0
+---------------------
+>by FrozeRain. 
+#### Use: 
+* symbol **`+`** for sum;
+* symbol **`-`** for minus;
+* symbol **`*`** for multiply;
+* symbol **`/`** for division;
+* symbol **`.`** for float numbers; 
+* type **`stop`** for exit.
+>Example: **`-45.5*(-6.3)`**
+
