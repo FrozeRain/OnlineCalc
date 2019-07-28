@@ -67,20 +67,21 @@ public class CalcClient {
                 if (example.equalsIgnoreCase("stop")){
                     break;
                 }
-                channel.write(example + "\n");
+                channel.writeAndFlush(example + "\n");
             }
             channel.disconnect();
             System.out.println("> Disconnected!");
-        } catch (InterruptedException e) {
+        } catch (InterruptedException | IOException e) {
             e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        finally {
+        } finally {
             group.shutdownGracefully();
         }
     }
-    public static void main(String[] args) throws Exception {
-        new CalcClient("localhost", 8080).run();
+    public static void main(String[] args)  {
+        try {
+            new CalcClient("localhost", 8080).run();
+        } catch (Exception e){
+            System.out.println("> Error: " + e.getMessage());
+        }
     }
 }
